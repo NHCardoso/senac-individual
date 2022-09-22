@@ -7,6 +7,11 @@
     padding:0;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: linear-gradient(-45deg, #cf9bcf, #d1b1d1, #8effee, #b6f8ee);
     background-size: 400% 400%;
@@ -28,6 +33,9 @@ header{
 }
 .wrapper{
     height: 90vh;
+}
+h1{
+    font-size: 2rem;
 }
 ul{
     display: flex;
@@ -64,6 +72,9 @@ a:hover{
 section, footer{
     padding: 16px 20px
 }
+section{
+    text-align: center;
+}
 
 form{
     display: flex;
@@ -93,12 +104,31 @@ form input, #msg{
 }
 
 @media (min-width:750px){
+    h1{
+        font-size: 3rem;
+    }
     ul{
         justify-content: center;
         gap: 106px;
     }
+    section h2{
+        font-size: 2.5rem;
+        text-shadow:1px 1px 1px black;
+        margin-bottom: 20px;
+    }
+    section p{
+        font-size: 1.2rem;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.468);
+    }
     form{
         width: 50%;
+    }
+    form input, form textarea{
+        font-size: 16px;
+    }
+    form input::placeholder, form textarea::placeholder{
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.245);
     }
     footer{
         display: flex;
