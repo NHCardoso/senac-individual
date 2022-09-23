@@ -30,6 +30,8 @@ body{
 }
 header{
     height: 10vh;
+    position: fixed;
+    width: 100%;
 }
 .wrapper{
     height: 90vh;
@@ -74,7 +76,51 @@ section, footer{
 }
 section{
     text-align: center;
+    padding-block: 250px;
 }
+.img-github{
+    width: 64px;
+    border-radius: 50%;
+}
+
+.em-breve {
+    display: flex;
+    justify-content: space-evenly;
+    
+
+    
+}
+
+.em-breve div {
+    border: 3px solid rgb(255, 255, 255);
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    
+    justify-content: center;
+    align-items:center;
+    box-sizing: border-box;
+    padding: 0 112px;
+    position: relative;
+    display:flex;
+
+    
+  }
+
+
+  .header-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #5e2921;
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 112px;
+    position: relative;
+}
+
 
 form{
     display: flex;
@@ -91,7 +137,7 @@ form{
 form input, #msg{
     background-color: transparent;
     border: none;
-    width: 80%;
+    width: 80%
 }
 #nome, #email, #msg{
     border-bottom: 2px solid black;
@@ -130,8 +176,25 @@ form input, #msg{
         color: white;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.245);
     }
+
+    
     footer{
         display: flex;
         justify-content: center;
+    }
+}
+@media (max-width: 1629px){
+    .em-breve{
+        flex-direction: column;
+        align-items: center;
+    }
+    .em-breve p{
+        font-size: 1rem;
+    }
+    .em-breve div{
+        
+        width: 250px;
+        height: 250px;
+        margin-top: 50px;
     }
 }
